@@ -1,0 +1,68 @@
+*{
+  padding: 0;
+  margin: 0;
+  transition: 1s linear ease-in-out;
+}
+body{
+   background-color: rgb(191, 120, 120);
+   height:1000px
+  
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover{
+ box-shadow:inset 0 1px 3em 2px rgba(255, 1, 1, 0.1);
+}
+
+.navbar{
+  
+  height: fit-content !important;
+ position:sticky !important;
+ top:1px;
+  padding-bottom: 15px !important;
+  padding-top: 25px !important;
+  border-radius:1px solid rgba(0,0,0,0.1);
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.863) !important;
+  justify-items: center;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0 1px 3em 2px rgba(0, 0, 0, 0.484);
+  z-index: 1;
+}
+
+.brand-name{
+
+  font-weight: 900;
+  font-size: 40px;
+  color: rgb(161, 31, 31);
+  padding-right:10px;
+  padding-left:10px;
+  width: 60%;
+
+}
+
+.menu-item .nav-item {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  padding:5px;
+  padding-left: 10px;
+  padding-right:10px;
+  border-radius: 5px;
+
+}
+.menu-item .nav-item :hover,
+.menu-item .nav-item :focus{
+ background-color: rgb(161, 31, 31);
+ color: white !important;
+}

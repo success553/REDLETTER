@@ -1,0 +1,40 @@
+import React from "react";
+
+
+export const Navbar =() => {
+     return(
+        <>
+          <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+  {/* <div class="brand-name">
+            <h4>REDLETTER</h4>
+        </div> */}
+    <a class="navbar-brand brand-name" href="#">REDLETTER</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-item">
+        <li class="nav-item ">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item  ">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link ">Book</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link ">Read</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link ">FQ</a>
+        </li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+        </>
+     );
+}

@@ -1,0 +1,23 @@
+
+
+.header{
+    position: relative;
+     min-height: 600px;
+     max-height: fit-content;
+     padding: 10px;
+     background-color:  rgb(191, 120, 120);
+     width:100%;
+     background: url("../../assets/headerimg-2.jpg");
+}
+.header .container{
+    position:relative;
+    left:10px;
+    top:15px;
+     height: 550px;
+     width:90%;
+     background-color: rgba(255, 255, 255, 0.817);
+     border-radius: 15px;
+     padding:10px;
+
+     
+}
