@@ -2,28 +2,14 @@
   padding: 0;
   margin: 0;
   transition: 1s linear ease-in-out;
+  /* border: 1px solid rgba(0,0,0,0.1); */
 }
 body{
    background-color: rgb(191, 120, 120);
-   height:1000px
+   height:1000px;
+   transition:1s;  
+}
   
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover{
- box-shadow:inset 0 1px 3em 2px rgba(255, 1, 1, 0.1);
-}
-
 .navbar{
   
   height: fit-content !important;
@@ -34,6 +20,11 @@ button:hover{
   border-radius:1px solid rgba(0,0,0,0.1);
   display: flex;
   background-color: rgba(255, 255, 255, 0.863) !important;
+  background-image: linear-gradient(
+     120deg,
+     #ffffff  30%,
+     #99909900 70%
+   );
   justify-items: center;
   border-radius: 0px 0px 10px 10px;
   box-shadow: 0 1px 3em 2px rgba(0, 0, 0, 0.484);
@@ -66,3 +57,54 @@ button:hover{
  background-color: rgb(161, 31, 31);
  color: white !important;
 }
+
+.OpenOfcanvas{
+  display: none;
+  z-index: 1;
+  position: fixed;
+  left: 30px;
+  bottom:20px;
+  background-color: rgba(213, 34, 34, 0.597);
+  border-radius: 50%;
+  padding:18px 5px;
+  border: none;
+  box-shadow: 0 1px 3em 2px rgba(0,0,0,0.1);
+ }
+ .backToTop{
+
+  z-index: 1;
+  position: fixed;
+  left: 92%;
+  bottom:20px;
+  background-color: rgba(80, 77, 77, 0.597);
+  border-radius: 10%;
+
+  border: none;
+  box-shadow: 0 1px 3em 2px rgba(0,0,0,0.1);
+ }
+ .offcanvas-header{
+  display:flex;
+  flex-direction: column-reverse;
+ }
+ .offcanvas-header .btn-close{
+  border-radius: 0px 0px 30px 30px;
+  background-color: rgb(202, 37, 37);
+  padding: 20px 20px;
+ }
+ @media screen and (max-width: 830px) {
+      .OpenOfcanvas{
+        display: block;
+      }
+      .backToTop{
+
+        z-index: 1;
+        position: fixed;
+        left: 85%;
+        bottom:20px;
+        background-color: rgba(80, 77, 77, 0.597);
+        border-radius: 10%;
+      
+        border: none;
+        box-shadow: 0 1px 3em 2px rgba(0,0,0,0.1);
+       }
+ }

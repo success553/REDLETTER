@@ -5,14 +5,14 @@
     position:relative;
     min-height: 200px;
     padding:10px;
+    padding-top: 100px;
     background-color: rgb(230, 169, 169); 
     display:flex;
-    grid-template-columns: repeat(2, 1fr);
     gap: 5px;
 }
 .main .filterBook{
     position: sticky;
-    top:130px;
+    top:120px;
     min-height: 200px;
     max-height: fit-content;
     background-color: rgba(255, 255, 255, 0.703);
@@ -21,13 +21,15 @@
     width:30%;
     display:flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 2px;
 }
+
 
 .filterBook .searchContainer{
     width:100%;
     display: flex;
-    gap:5px
+    gap:5px;
+    margin-bottom:2px;
 }
 .searchContainer .searchInput{
      height:50px;
@@ -43,6 +45,27 @@
      background-color: white;
      font-weight: 700;
      border-radius: 25px;
+     background-image: linear-gradient(
+        90deg,
+        rgba(235, 101, 101, 0.95) 0%,
+        rgba(211, 27, 27, 0.959) 100%
+     );
+     color:white;
+     outline: none;
+     border:none;
+     padding:10px 20px;
+     width:fit-content;
+     transition: 5s;
+
+}
+.searchContainer .searchBtn:hover{
+
+    background-image: linear-gradient(
+       90deg,
+       rgba(250, 158, 158, 0.95) 0%,
+       rgba(250, 106, 106, 0.959) 100%
+    );
+    color:white
 
 }
 .filterBook .filterBookName{
@@ -81,18 +104,30 @@
     width:70%;
     min-height: 200px;
     max-height:fit-content;
-    padding: 30px;
+    padding: 40px 200px 70px 200px;
     background-color: rgba(255, 255, 255, 0.703);
     border-radius: 10px;
-    
+    display:flex;
+    flex-direction: column;
     justify-self: center;
+    gap:20px;
+    justify-items: center;
+    justify-content: center;
+}
+.book .booknav{
+   width:100%;
+   min-height:10px;
+   max-height:fit-content;
+   padding:10px;
+    border-radius: 15px;
+    background-color: white;
+    justify-content: center;
 }
 .book .mainBook{
-   
-      width:70%;
       justify-self: center;
-      min-height:200px;
-      max-height: fit-content;
+      width:100%;
+      justify-self: center;
+      height: fit-content;
       background-color: white;
       border-radius: 15px;
       padding-bottom: 10px;;
@@ -106,15 +141,86 @@
     text-align:center;
     font-size: 30px;
     text-transform: uppercase;
-    color: rgba(24, 23, 23, 0.908)
+    color: rgba(24, 23, 23, 0.758)
 }
 .mainBook .verseText{
-    color: rgba(226, 45, 45, 0.715); 
+    color: rgba(226, 45, 45, 0.657); 
     width:100%;
      
 }
 .mainBook .verseNumber{
     font-weight: 900;
     color: rgba(24, 23, 23, 0.908);
-    margin:3%;
+    margin:1%;
+    padding: 3px 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.filterBookNameNav{
+     width:90%;
+     align-content: center;
+     justify-self: center;
+
+    }
+    .filterBookNameNav .navItem{
+     display:flex;
+     flex-direction: row;
+     list-style: none;
+     gap: 5px;
+     padding-left: 0;
+     height: 100%;
+     max-width: 100%;
+     overflow-y: auto;
+     align-self: center;
+     justify-self: center;
+     padding-top: 10px;
+    }
+    .navItem .navList{
+        background-color: rgb(255, 254, 254);
+        box-shadow: 0 1px 2px rgba(0,0,0, 0.1);
+        border-radius: 5px;
+        align-content: center;
+        height: 50px;
+        width: fit-content;
+        padding:5px;
+        padding-left: 25px;
+        padding-right:25px;
+        cursor:pointer;
+        transition: 1s;
+        color:rgba(0,0,0, 0.5)
+    }
+    .navItem .navList:hover{
+        background-color:rgb(251, 227, 227);
+        width: fit-content;
+         
+        padding-left: 20px;
+        padding-right: 20px;
+    
+    }
+@media screen and (max-width: 830px) {
+       .main{
+         display: flex;
+         flex-direction: column;
+       }
+  
+       .main .filterBook{
+         display:none;
+       }
+       .booknav{
+        display:none
+       }
+       .book{
+        width:100%;
+        min-height: fit-content;
+        max-height: fit-content;
+        overflow-y: auto;
+        padding: 2px;
+        padding-bottom: 10px;
+      
+    }
+       .main .book .mainBook{
+         width:100%;
+         /* min-height:fit-content; */
+       }
 }

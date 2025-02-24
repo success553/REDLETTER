@@ -21,3 +21,20 @@
 
      
 }
+ @media screen and (max-width: 830px ) {
+     .header{
+        min-height: 300px;
+        max-height: 300px;
+        overflow: hidden;
+     }
+     .header .container{
+     
+         height: 300px;
+         justify-self: center;
+         width:90%;
+         left:0;
+         padding:10px;
+    
+         
+    }
+ }
