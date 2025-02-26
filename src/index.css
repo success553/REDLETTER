@@ -9,7 +9,7 @@ body{
    height:1000px;
    transition:1s;  
 }
-  
+
 .navbar{
   
   height: fit-content !important;
@@ -62,20 +62,20 @@ body{
   display: none;
   z-index: 1;
   position: fixed;
-  left: 30px;
-  bottom:20px;
-  background-color: rgba(213, 34, 34, 0.597);
+  left: 85%;
+  bottom:70%;
+  background-color: rgba(213, 34, 34, 0.319);
   border-radius: 50%;
   padding:18px 5px;
   border: none;
-  box-shadow: 0 1px 3em 2px rgba(0,0,0,0.1);
+  box-shadow:  0 1px 3em 2px rgba(0,0,0,0.1);
  }
  .backToTop{
 
   z-index: 1;
   position: fixed;
-  left: 92%;
-  bottom:20px;
+  left: 95%;
+  bottom:15%;
   background-color: rgba(80, 77, 77, 0.597);
   border-radius: 10%;
 
@@ -97,14 +97,6 @@ body{
       }
       .backToTop{
 
-        z-index: 1;
-        position: fixed;
-        left: 85%;
-        bottom:20px;
-        background-color: rgba(80, 77, 77, 0.597);
-        border-radius: 10%;
-      
-        border: none;
-        box-shadow: 0 1px 3em 2px rgba(0,0,0,0.1);
+        display:none;
        }
  }
